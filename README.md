@@ -1,4 +1,13 @@
-# Puppet erlang for Boxen
+# Erlang Puppet Module for Boxen
 
-FIXME: update me bro
+Requires the following boxen modules:
 
+* `boxen`
+* `autoconf`
+* `libtool`
+
+## Usage
+
+```puppet
+include erlang
+```
