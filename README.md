@@ -11,3 +11,9 @@ Requires the following boxen modules:
 ```puppet
 include erlang
 ```
+
+## Developing
+
+Write code.
+
+Run `script/cibuild`.
