@@ -1,3 +1,8 @@
+# Public: Install Erlang from homebrew.
+#
+# Examples
+#
+#   include erlang
 class erlang {
   require autoconf
   require libtool
