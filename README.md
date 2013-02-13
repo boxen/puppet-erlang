@@ -1,10 +1,6 @@
 # Erlang Puppet Module for Boxen
 
-Requires the following boxen modules:
-
-* `boxen`
-* `autoconf`
-* `libtool`
+Install the [Erlang](http://www.erlang.org) programming language.
 
 ## Usage
 
@@ -12,8 +8,13 @@ Requires the following boxen modules:
 include erlang
 ```
 
-## Developing
+## Required Puppet Modules
 
-Write code.
+* `autoconf`
+* `boxen`
+* `libtool`
 
-Run `script/cibuild`.
+## Development
+
+Write code. Run `script/cibuild` to test it. Check the `script`
+directory for other useful tools.
