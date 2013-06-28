@@ -1,19 +1,11 @@
-# Public: Install Erlang from homebrew.
+# Public: Install Erlang from a dmg file.
 #
 # Examples
 #
 #   include erlang
 class erlang {
-  require autoconf
-  require libtool
-
-  package {
-    'erlang':
-      require => [
-        Package['automake'],
-        Package['libtool']
-      ];
-    'automake':
-      require => Package['autoconf'];
+  package { 'Erlang':
+    provider => 'pkgdmg',
+    source   => 'https://elearning.erlang-solutions.com/couchdb/rbingen_adapter/package_erlang_R16B01-1_kgadek_2013.06.18_14:30:24/Erlang_R16B01_x64.dmg'
   }
 }
