@@ -1,14 +1,2 @@
-GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (0.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-libtool
-  specs:
-    libtool (0.0.1)
-
 DEPENDENCIES
-  autoconf (= 0.0.1)
-  libtool (= 0.0.1)
 

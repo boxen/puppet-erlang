@@ -1,2 +1,0 @@
-mod 'autoconf', '0.0.1', :github_tarball => 'boxen/puppet-autoconf'
-mod 'libtool',  '0.0.1', :github_tarball => 'boxen/puppet-libtool'

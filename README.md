@@ -12,9 +12,7 @@ include erlang
 
 ## Required Puppet Modules
 
-* `autoconf`
 * `boxen`
-* `libtool`
 
 ## Development
 
