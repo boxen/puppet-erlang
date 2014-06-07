@@ -3,9 +3,15 @@
 # Examples
 #
 #   include erlang
-class erlang {
+class erlang($version = '17.0-1')
+{
+  case $::macosx_productversion_major {
+    '10.9': { $_osx_version = '10.9' }
+    default: { $_osx_version = '10.6.8' }
+  }
+
   package { 'Erlang':
     provider => 'pkgdmg',
-    source   => 'https://elearning.erlang-solutions.com/couchdb/rbingen_adapter/package_erlang_R16B01-1_kgadek_2013.06.18_14:30:24/Erlang_R16B01_x64.dmg'
+    source   => "http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_1_general/esl-erlang_${version}~osx~${_osx_version}_amd64.dmg"
   }
 }
