@@ -13,6 +13,6 @@ class erlang($version = '17.0-1')
 
   package { 'Erlang':
     provider => 'pkgdmg',
-    source   => "http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_1_general/esl-erlang_${version}~osx~${_osx_version}_amd64.dmg"
+    source   => "http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_${version}~osx~${_osx_version}_amd64.dmg"
   }
 }
