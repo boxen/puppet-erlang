@@ -30,4 +30,19 @@ describe 'erlang' do
       })
     end
   end
+
+  context 'Mac OS 10.10' do
+    let(:facts) do
+      {
+        :macosx_productversion_major => '10.10'
+      }
+    end
+
+    it do
+      should contain_package('Erlang').with({
+        :provider => 'pkgdmg',
+        :source   => 'http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_17.0-1~osx~10.9_amd64.dmg'
+      })
+    end
+  end
 end
